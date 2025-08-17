@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		71CE45C92E524EE90092EE7C /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE45C82E524EE90092EE7C /* SwiftSoup */; };
+		71CE45D82E5253240092EE7C /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE45D72E5253240092EE7C /* SwiftOpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		71CE45A52E5238D00092EE7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CE45D82E5253240092EE7C /* SwiftOpenAI in Frameworks */,
+				71CE45C92E524EE90092EE7C /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = recipe_box;
 			packageProductDependencies = (
+				71CE45C82E524EE90092EE7C /* SwiftSoup */,
+				71CE45D72E5253240092EE7C /* SwiftOpenAI */,
 			);
 			productName = recipe_box;
 			productReference = 71CE45932E5238CE0092EE7C /* recipe_box.app */;
@@ -208,6 +217,10 @@
 			);
 			mainGroup = 71CE458A2E5238CE0092EE7C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				71CE45C72E524EE90092EE7C /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				71CE45D62E5253240092EE7C /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 71CE45942E5238CE0092EE7C /* Products */;
 			projectDirPath = "";
@@ -595,6 +608,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71CE45C72E524EE90092EE7C /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.3;
+			};
+		};
+		71CE45D62E5253240092EE7C /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jamesrochabrun/SwiftOpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71CE45C82E524EE90092EE7C /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71CE45C72E524EE90092EE7C /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		71CE45D72E5253240092EE7C /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71CE45D62E5253240092EE7C /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71CE458B2E5238CE0092EE7C /* Project object */;
 }
