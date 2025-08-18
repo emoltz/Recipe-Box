@@ -57,3 +57,5 @@ The scraper system uses environment variables for configuration:
 - Environment-driven configuration for flexibility
 - Structured data models for parsed content with optional AI enhancement
 - Retry logic with exponential backoff for network resilience
+- always look up appropriate ios26 beta documentation when doing UI
+- always use Swift 6

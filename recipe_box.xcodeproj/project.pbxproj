@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71360AF42E536BD6006931F3 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 71360AF22E536BD6006931F3 /* CLAUDE.md */; };
+		71360AF52E536BD6006931F3 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = 71360AF32E536BD6006931F3 /* TODO.md */; };
+		71360B112E536E9D006931F3 /* .mcp.json in Sources */ = {isa = PBXBuildFile; fileRef = 71360B102E536E98006931F3 /* .mcp.json */; };
 		71CE45C92E524EE90092EE7C /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE45C82E524EE90092EE7C /* SwiftSoup */; };
 		71CE45D82E5253240092EE7C /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE45D72E5253240092EE7C /* SwiftOpenAI */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71360AF22E536BD6006931F3 /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
+		71360AF32E536BD6006931F3 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		71360B102E536E98006931F3 /* .mcp.json */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .mcp.json; sourceTree = "<group>"; };
 		71CE45932E5238CE0092EE7C /* recipe_box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe_box.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CE45A42E5238D00092EE7C /* recipe_boxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipe_boxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CE45AE2E5238D00092EE7C /* recipe_boxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipe_boxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,9 @@
 		71CE458A2E5238CE0092EE7C = {
 			isa = PBXGroup;
 			children = (
+				71360B102E536E98006931F3 /* .mcp.json */,
+				71360AF22E536BD6006931F3 /* CLAUDE.md */,
+				71360AF32E536BD6006931F3 /* TODO.md */,
 				71CE45952E5238CE0092EE7C /* recipe_box */,
 				71CE45A72E5238D00092EE7C /* recipe_boxTests */,
 				71CE45B12E5238D00092EE7C /* recipe_boxUITests */,
@@ -238,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71360AF42E536BD6006931F3 /* CLAUDE.md in Resources */,
+				71360AF52E536BD6006931F3 /* TODO.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71360B112E536E9D006931F3 /* .mcp.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

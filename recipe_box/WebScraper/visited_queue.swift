@@ -14,4 +14,5 @@ actor CrawlQueue {
 	private var items = [QueueItem]()
 	func push(_ item: QueueItem) { items.append(item) }
 	func pop() -> QueueItem? { items.isEmpty ? nil : items.removeFirst() }
+	func isEmpty() -> Bool { items.isEmpty }
 }

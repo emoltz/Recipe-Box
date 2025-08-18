@@ -1,5 +1,5 @@
 import SwiftOpenAI
 
-actor AIExtractor {
+actor AIParser {
 	
 }
