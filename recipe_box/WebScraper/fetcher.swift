@@ -15,8 +15,21 @@ final class Fetcher {
 				req.setValue(ua, forHTTPHeaderField: "User-Agent")
 				req.setValue("text/html,application/xhtml+xml", forHTTPHeaderField: "Accept")
 				let (data, resp) = try await URLSession.shared.data(for: req)
-				guard let http = resp as? HTTPURLResponse,
-					  (200..<300).contains(http.statusCode) else {
+				guard let http = resp as? HTTPURLResponse else {
+					throw URLError(.badServerResponse)
+				}
+				
+				// Handle redirects
+				if (300..<400).contains(http.statusCode) {
+					guard let location = http.allHeaderFields["Location"] as? String,
+						  let redirectURL = URL(string: location, relativeTo: current) else {
+						throw URLError(.badURL)
+					}
+					current = redirectURL
+					continue
+				}
+				
+				guard (200..<300).contains(http.statusCode) else {
 					throw URLError(.badServerResponse)
 				}
 				guard let html = String(data: data, encoding: .utf8)

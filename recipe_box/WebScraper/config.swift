@@ -19,7 +19,7 @@ let CONFIG = CrawlConfig(
 	timeoutSeconds: Double(ProcessInfo.processInfo.environment["SCRAPER_TIMEOUT"] ?? "20") ?? 20,
 	followSameHostOnly: (ProcessInfo.processInfo.environment["SCRAPER_SAME_HOST"] ?? "true") == "true",
 	useAIParsing: (ProcessInfo.processInfo.environment["SCRAPER_USE_AI"] ?? "false") == "true",
-	openAIModel: ProcessInfo.processInfo.environment["OPENAI_MODEL"] ?? "gpt-4o-2024-08-06"
+	openAIModel: ProcessInfo.processInfo.environment["OPENAI_MODEL"] ?? "gpt-5"
 )
 
 extension URL {
